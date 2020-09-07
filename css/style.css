@@ -1,0 +1,297 @@
+*{
+	margin:0; padding:0;box-sizing:border-box;
+
+}
+body{
+	font: 15px/1.5 Times New Roman,cursive,serif;
+	padding: 0;
+	margin:0;
+	background-color: #fcf6eb;
+	height: 100%
+}
+/*Global*/
+.container{
+	width: 80%;
+	margin: auto;
+	overflow: hidden;
+}
+/*Showcase*/
+#showcase{
+	min-height: 400px;
+	background: url('../images/marble1.jpg') no-repeat 0;
+	text-align: center;
+	color: #000000;
+}
+#showcase h1{
+	font-weight: bold;
+	font-size: 55px;
+	margin-top: 317px;
+	margin-bottom: 8px;
+}
+
+/*Products*/
+#products{
+	margin-top:40px;
+
+	display:grid;
+	grid-template-rows: 282px;
+	grid-template-columns: repeat(3,350px);
+	grid-gap:30px;
+	/*margin-right: 190px;*/
+	text-align:center;
+}
+
+
+
+aside{
+	min-height: 400px;
+}
+aside .dark{
+	float: none;
+	width: 100%;
+	margin-top: 10px;
+	font-family: Arial,sans-serif;
+	background-color: #ffefd5;
+	padding-left: 20px;
+	margin-left: 10px;
+}
+aside .dark h1{
+	font-size: 215%;
+}
+/*Products page*/
+.title{
+    
+	text-align: center;
+	color: #000000;
+}
+.container1,#back .container2{
+	margin-top: 20px;
+	/*background-color: #ffffff;*/
+	font-size: 50px;
+	min-height: 600px
+}
+main{
+	margin-left:80px;
+	display:grid;
+	grid-template-rows: 282px 280px 282px 280px;
+	grid-template-columns: repeat(3,350px);
+	grid-gap:60px;
+	text-align:center;
+}
+main.marblepr{
+	grid-column:1/ span 2;
+}
+#Granite{
+	display:grid;
+	grid-template-rows: 284px;
+	grid-template-columns: repeat(3,350px);
+	grid-gap:60px;
+	text-align:center;
+}
+#Granite.granitepr{
+	grid-column:1/ span 2;
+}
+#Border{
+	display:grid;
+	grid-template-rows: 200px;
+	grid-template-columns: repeat(4,200px);
+	grid-gap:60px;
+}
+#Border.border{
+	grid-column:1/ span 2;
+}
+
+#back .container1 .marble{
+	min-width: 200px;
+	min-height: 100px;
+    float: left;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	/*margin-left: 50px;*/
+	margin-right:10px;
+}
+#back .container1 .marble h1,#back .container1 .granite h1,#back .container1 .border h1{
+	border-bottom: : 2px solid #CD7F32;
+	background-color:  #B5651D;
+}
+
+#back .container1 .granite{
+	min-width: 200px;
+	min-height: 100px;
+   float: left;
+	width: 100%;
+	padding: 10px;
+	text-align: center;
+	margin-left: 10px;
+}
+#back .container1 .border{
+	min-width: 200px;
+	min-height: 100px;
+   float: left;
+    width: 100%;
+	padding: 10px;
+	text-align: center;
+	margin-right: 60px;
+	margin-right: 60px;
+	border-style: none !important;
+}
+#back .container1 .marble .granite .border img{
+	width: 100px;
+	height: 60px;
+}
+#back .container1 a{
+	color: #ffffff;
+}
+/*For marble page*/
+#products a,.title a{
+	color: #000000;
+}
+#back{
+	min-height: 800px;
+}
+
+#back .container2 .granite1,#back .container2 .granite2,#back .container2 .granite3{
+	float: left;
+	width: 33%;
+	text-align: center;
+}
+
+#back .container2 .marble img,#back .container2 .border img,#back .container2 .granite1 img,#back .container2 .granite2 img,#back .container2 .granite3 img{
+	width: 300px;
+	height: 260px;
+}
+#back .container2 .border{
+	float: left;
+	width: 25%;
+	border: none !important;
+	/*text-align: center;*/
+}
+#back .container2 h1{
+	text-align: center;
+}
+footer{
+	position: fixed;
+	width:100%;
+	color: #ffffff;
+	background-color: #FFA500;
+	bottom:0%;
+	margin:0%;
+	/*margin-top: 100px;*/
+	text-align: left;
+}
+/*Media Queries*/
+/*For Tablet4*/
+@media ((min-width: 481px) and (max-width: 768px)){
+	#showcase h1{
+		margin-top: 40px;
+	}
+	/*#products .categories{
+
+		float: left;
+		width: 48%;
+	}*/
+	#products.categories.marble1 img{
+   	float: left;
+   	width: 50%;
+   	text-align: center;
+    margin-right:20px; 
+    }
+    #products .categories .granite1 img{
+    float:left;
+   	width: 50%;
+   	text-align: center;
+    margin-right:20px; 
+    }
+    #products.categories.border1{
+   	width: 100%;
+   	text-align: center;
+    margin-right:20px; 
+    }
+    
+    #products .categories .marble1 img,#products .categories .granite1 img,#products .categories .border1 img{
+	width: 110px;
+	height: 90px;
+    }
+   #main.container article,section .title,.container1 .marble,.container1 .granite,.container1 .border{
+   	float: none;
+   	text-align: center;
+   	width: 100%;
+   }
+
+   #back.container1.marble.marble-page img{
+    float:left;
+    width:100%;
+    text-align:center;
+    margin-right:20px; 
+   }
+   #back.container1.granite.granite-page img{
+   	float:left;
+    width:50%;
+    text-align:center;
+    margin-left:20px; 
+   }
+   #back.container1.border.border-page img{
+   	float:left;
+    width:100%;
+    text-align:center;
+    margin-left:30px; 
+   }
+   /*#back.grid1.marble1 img{
+   	height:40px;
+   	width:40px;
+   }*/
+   
+   footer{
+   	width: 100%;
+   	position: sticky;
+   }
+}
+
+@media only screen and (max-width: 480px){
+  #showcase h1{
+		margin-top: 40px;
+	}
+   #main.container article,aside.dark,section .title,.container1 .marble,.container1 .granite,.container1 .border{
+   	float: left;
+   	text-align: center;
+   	width: 100%;
+   }
+   main{
+   	margin-top:130px;
+   	margin-right:250px;
+   	display:grid;
+   	grid-template-columns:1fr;
+   	grid-template-rows:2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr 2.5fr;
+   }
+   #Granite{
+   	height:800px;
+   	display:grid;
+   	grid-template-columns:1fr;
+   	grid-template-rows:2.5fr 2.5fr 2.5fr;
+   }
+   #Border{
+   	margin-top:160px;
+   	display:grid;
+   	grid-template-columns:1fr;
+   	grid-template-rows:2.5fr 2.5fr 2.5fr 2.5fr;
+   }
+   #products{
+     
+   	display:grid;
+    margin-left: 23px;
+   	grid-template-columns:1fr;
+   	grid-template-rows:2.2fr 2.2fr 2.2fr;
+   	/*grid-area: left;*/
+   	margin-bottom:20px;
+   }
+   footer{
+   	margin:0%;
+   	width: 100%;
+   	position:fixed;
+   	bottom:0%;
+   	
+   }
+}
+
+
